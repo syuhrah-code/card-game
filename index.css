@@ -1,0 +1,68 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('green-bg.jpg');
+    font-family: "Metal Mania", "sans-serif";
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+button {
+    background-color: #FFF100;
+    cursor: pointer;
+    border: none;
+}
+
+button#new-deck {
+    align-self: flex-start;
+    padding: 5px;
+}
+
+button.draw {
+    font-size: 1.2em;
+    padding: 5px;
+    align-self: stretch;
+}
+
+div.card-slot {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 120px;
+    width: calc(120px*5/7)
+}
+
+div.card-slot:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+
+img.card {
+    width: 100%;
+    height: 100%;
+}
+
+div.top>p {
+    margin: 0;
+    margin-left: 10px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+h2 {
+    margin: 10px;
+}
+
+.metal-mania-regular {
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
